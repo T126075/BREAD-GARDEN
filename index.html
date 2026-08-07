@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="home">
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/BREAD GARDEN.png" alt="BREAD GARDENのロゴ">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="index.html#shop">店舗情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero">
+    <h2>焼き立てのパンで幸せな朝を</h2>
+    <a href="#menu">
+      <img src="img/down.png" alt="下へスクロール">
+    </a>
+  </section>
+
+  <main>
+    <!-- メニュー -->
+    <section class="main-section" id="menu">
+      <span class="heading-group">
+        <h2>MENU</h2>
+        <p>メニュー</p>
+      </span>
+      <ul class="container menu-guid-list">
+        <li>
+          <a href="menu.html?category=limited">
+          <!-- ↑ここは後で変える -->
+            <img src="img/期間限定.jpg" alt="">
+            <h2>期間限定</h2>
+          </a>
+        </li>
+        <li>
+          <a href="menu.html?category=bread">
+          <!-- ↑ここは後で変える -->
+            <img src="img/食パン.jpg" alt="">
+            <h2>食パン</h2>
+          </a>
+        </li>
+        <li>
+          <a href="menu.html?category=savoury">
+          <!-- ↑ここは後で変える -->
+            <img src="img/総菜パン.jpg" alt="">
+            <h2>総菜パン</h2>
+          </a>
+        </li>
+        <li>
+        <a href="menu.html?category=sweet">
+          <!-- ↑ここは後で変える -->
+            <img src="img/菓子パン.jpg" alt="">
+            <h2>菓子パン</h2>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 店舗情報 -->
+    <section class="main-section shop" id="shop">
+      <span class="heading-group">
+        <h2>SHOP</h2>
+        <p>店舗情報</p>
+      </span>
+      <div class="container layout">
+        <div class="text">
+          <h3>
+            BREAD GARDEN
+            <span>ブレッドガーデン</span>
+          </h3>
+          <dl>
+            <dt>住所</dt>
+            <dd>〒123-4567 長野県茅野市豊平1234-0</dd>
+            <dt>営業時間</dt>
+            <dd>7:00-19:00</dd>
+            <dt>定休日</dt>
+            <dd>不定休</dd>
+            <dt>電話番号</dt>
+            <dd>012-3456-7890</dd>
+          </dl>
+        </div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6455.023238602218!2d138.1796130052971!3d36.00779797145485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601c50e71f7adf49%3A0x2a9c9bdd30254f00!2z5YWs56uL6KuP6Kiq5p2x5Lqs55CG56eR5aSn5a2m!5e0!3m2!1sja!2sjp!4v1779669544932!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="main-section" id="contact">
+      <span class="heading-group">
+        <h2>CONTACT</h2>
+        <p>お問い合わせ</p>
+      </span>
+      <div class="container contact">
+        <!--ご不明な点などございましたら、お気軽にお問い合わせください。</p> -->
+        <div class="layout">
+          <div class="tel">
+            <p class="label">電話でお問い合わせ</p>
+            <a href="tel:0312345678" class="number">
+              <img src="img/icon-tel.svg" alt="電話アイコン">
+              012-3456-7890
+            </a>
+            <p class="hour">受付時間: 7:00~19:00</p>
+          </div>
+          <div class="form">
+            <p class="label">フォームでお問い合わせ</p>
+            <a href="contact.html" class="button">お問い合わせフォームへ</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+    <nav>
+      <div>
+        <a href="index.html" class="logo">
+          <img src="img/BREAD GARDEN.png" alt="BREAD GARDENのロゴ">
+        </a>
+        <ul class="footer_sns">
+          <li><a href=""><img src="img/xロゴ.svg" alt=""></a></li>
+          <li><a href=""><img src="img/インスタロゴ.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <ul class="footer_nav">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="index.html#shop">店舗情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">&copy; 2026 BREAD GARDEN</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="home">
+   <header>
+    <a href="index.html" class="logo">
+      <img src="img/BREAD GARDEN.png" alt="BREAD GARDENのロゴ">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="index.html#shop">店舗情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="lower-main">
+    <div class="lower-heading-group">
+      <h2>お問い合わせ</h2>
+      <p>ご不明な点などございましたら、お気軽にお問い合わせください。</p>
+    </div>
+    <form class="form-box" action="https://api.staticforms.xyz/submit" method="post">
+      <input type="hidden" name="accessKey" value="sf_82e46b26c26b3408b10b47f9">
+      <input type="hidden" name="redirectTo" value="contact_finish.html">
+      <!-- リダイレクト先はページ公開後に変更 -->
+      <div class="form-item">
+        <label>お名前</label>
+        <input type="text" name="name" placeholder="例）山田 太郎">
+      </div>
+      <div class="form-item">
+        <label>メールアドレス</label>
+        <input type="email" name="email" placeholder="例）example@example.com">
+      </div>
+      <div class="form-item">
+        <label>お問い合わせ内容</label>
+        <textarea rows="7" name="message" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+      </div>
+      <div class="form-item">
+        <button type="submit">送信する</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <nav>
+      <div>
+        <a href="index.html" class="logo">
+          <img src="img/BREAD GARDEN.png" alt="BREAD GARDENのロゴ">
+        </a>
+        <ul class="footer_sns">
+          <li><a href=""><img src="img/xロゴ.svg" alt=""></a></li>
+          <li><a href=""><img src="img/インスタロゴ.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <ul class="footer_nav">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="index.html#shop">店舗情報</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <p class="copyright">&copy; 2026 BREAD GARDEN</p>
+  </footer>
+</body>
+</html>
