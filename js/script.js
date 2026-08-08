@@ -93,8 +93,19 @@ const category = params.get("category");
 
 if (category) {
   displayMenu(category);
+
+  button.forEach((button) => {
+    if(button.dataset.category === category) {
+      button.classList.add("active");
+    }
+  });
 } else {
   displayMenu("all");
+  button.forEach((button) => {
+    if(button.dataset.category === "all") {
+      button.classList.add("active");
+    }
+  });
 }
 
 buttons.forEach((button) => {
@@ -122,4 +133,6 @@ function submitForm(event) {
 
 const form = document.querySelector(".form-box");
 
-form.addEventListener("submit", submitForm);
+if (form) {
+  form.addEventListener("submit", submitForm);
+}
