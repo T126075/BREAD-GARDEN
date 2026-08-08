@@ -1,3 +1,4 @@
+// メニュー
 const menulist = document.querySelector(".menu-list");
 const buttons = document.querySelectorAll(".menu-button");
 
@@ -109,3 +110,16 @@ buttons.forEach((button) => {
     button.classList.add("active");
   });
 });
+
+// お問い合わせフォーム
+function submitForm(event) {
+  event.preventDefault();
+
+  console.log("お問い合わせを送信しました");
+
+  window.location.href = "contact_finish.html";
+}
+
+const form = document.querySelector(".form-box");
+
+form.addEventListener("submit", submitForm);
